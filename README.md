@@ -1,6 +1,6 @@
 # Просто установить все зависимости!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Приложение делает запросы на 3001 порт на котором должен быть установлен JSON-SERVER.
 
 ## Available Scripts
 
