@@ -10,12 +10,15 @@ import { useNavigate } from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {rootReducerType} from "../../store/Store-redux";
 import {authMeTC, logOutAC} from "../../reducers/Auth-reducer";
+import {useEffect} from "react";
 
 export const Header =() => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const user = useSelector((state: rootReducerType) : string => state.authReducer.login as string)
+    const currentPage = useSelector((state: rootReducerType) : number => state.heroesReducer.currentPage)
     const auth = useSelector((state:rootReducerType) :boolean | null => state.authReducer.isAuth)
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
@@ -30,7 +33,7 @@ export const Header =() => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        <Button disabled={!auth} onClick={() => {navigate('/heroes')}} sx={{ my: 2, color: 'white', display: 'inline' }}  variant={'outlined'}>Герои</Button>
+                        <Button disabled={!auth} onClick={() => {navigate(`/heroes/page=${currentPage}`)}} sx={{ my: 2, color: 'white', display: 'inline' }}  variant={'outlined'}>Герои</Button>
                         <Button disabled={!auth} onClick={() => {navigate('/demons')}} sx={{ my: 2, color: 'white', display: 'inline' }}  variant={'outlined'}>Демоны</Button>
                     </Typography>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 0 }}>

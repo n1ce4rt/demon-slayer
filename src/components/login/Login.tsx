@@ -5,16 +5,11 @@ import TextField from '@mui/material/TextField';
 import Container from "@mui/material/Container";
 import {Alert, Checkbox, CssBaseline, FormControlLabel} from "@mui/material";
 import Button from "@mui/material/Button";
-import {authMeTC} from "../../reducers/Auth-reducer";
-import {useDispatch, useSelector} from "react-redux";
 import * as yup from 'yup';
-import {useEffect, useState} from "react";
-import {useNavigate} from "react-router-dom";
-import {rootReducerType} from "../../store/Store-redux";
+import {useState} from "react";
 
 
 const validationSchema = yup.object({
-
     login: yup
         .string()
         .min(3, 'Too Short!')
@@ -25,37 +20,25 @@ const validationSchema = yup.object({
         .min(8, 'Password should be of minimum 8 characters length')
         .required('Password is required'),
 });
-export const Login = () => {
-    const error = useSelector((state: rootReducerType): string | undefined => state.authReducer.error)
-    const navigate = useNavigate()
-    const isAuth = useSelector<rootReducerType>(state => state.authReducer.isAuth)
-    const [sev, setSev] = useState<string>('')
 
-
-    useEffect(() => {
-        console.log('ok')
-        if (isAuth) {
-            setTimeout(() => {
-
-                navigate('/heroes')
-            }, 2000)
-
-        }
-    }, [isAuth, error])
-    const dispatch = useDispatch()
+export type propsType = {
+    authMe: (login: string, password: string, isAuth: boolean) => void
+    isAuth: boolean | null
+    error: string | undefined
+}
+export const Login = ({error, authMe, isAuth}: propsType) => {
+    const [saveLogin, setSaveLogin] = useState<boolean>(true)
     const formik = useFormik({
         initialValues: {
-            login: sev,
+            login: saveLogin ? 'Arthur': '',
             password: '',
         },
         validationSchema: validationSchema,
         onSubmit: (values) => {
-            dispatch(authMeTC(values.login, values.password, true))
+            authMe(values.login, values.password, true)
         },
     });
     return (
-
-
         <React.Fragment>
             <CssBaseline/>
             <Container maxWidth="sm">
@@ -90,10 +73,12 @@ export const Login = () => {
                                    helperText={formik.touched.password && formik.errors.password}
                         />
 
-                        <FormControlLabel control={<Checkbox defaultChecked/>} label="Запомнить меня"
+                        <FormControlLabel control={<Checkbox checked={saveLogin} onChange={() => {
+                            setSaveLogin(!saveLogin)
+                        }}/>} label="Запомнить меня"
                         />
 
-                        <Button onChange={() => setSev(formik.values.login)} type={'submit'} sx={{width: 'fit-content', margin: '10px auto'}}
+                        <Button type={'submit'} sx={{width: 'fit-content', margin: '10px auto'}}
                                 variant="contained">Login</Button>
                     </form>
                 </Box>

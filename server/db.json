@@ -1,30 +1,30 @@
 {
   "auth": {
     "login": "Arthur",
-    "password": "12312312312",
+    "password": "1231231231231",
     "isAuth": true
   },
   "characters": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Танджиро Камадо",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "13",
       "date of birth": "14 июля",
       "growth": "165 см",
       "weight": "61 кг",
       "utensils": "Истребители Демонов",
-      "style": "Дыхание воды, Танец бога огня",
+      "style": "Дыхание воды, танец бога огня",
       "status": "Жив",
       "img": "https://sun9-49.userapi.com/impf/MBV9IGRdqrMctjK23VOaDh2Gitkn2lK34_Hopg/PkmDZNsW4RQ.jpg?size=799x1142&quality=96&sign=8ed1e3594f9edfdd0658493522994448&type=album"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Зеницу Агацума",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "3 сентября",
       "growth": "164.5 см",
       "weight": "58 кг",
@@ -34,11 +34,11 @@
       "img": "https://sun3.43222.userapi.com/impf/5hjKB8zMknde7PrOJ0U9FcXN66bIk266-TiCpQ/Aux-Ad5U_Aw.jpg?size=350x500&quality=96&sign=9a65260a66aaa3e6cbfabecb545ab8b0&type=album"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Иноске Хашибира",
       "race": "Человек",
       "gender": "Мужской",
-      "age": "15 лет",
+      "age": "15",
       "date of birth": "22 апреля",
       "growth": "164 см",
       "weight": "63 кг",
@@ -48,11 +48,11 @@
       "img": "https://sun9-3.userapi.com/impf/FSbkVpN96R61Pi3McU2fgOif7gopHIrblCv9wA/_kIKoCFqEZs.jpg?size=350x500&quality=96&sign=a06727cf07b86ef136b2b291c26ca595&type=album"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Канао Цуюри",
       "race": "Человек",
       "gender": "Женский",
-      "age": 16,
+      "age": "16",
       "date of birth": "19 мая",
       "growth": "156 см",
       "weight": "46 кг",
@@ -62,11 +62,11 @@
       "img": "https://sun9-73.userapi.com/impf/XX3O3cbhbyBxD7pUYEC4D9vrrKPSXsTb6pyNvA/vg8ZJdViXRM.jpg?size=314x500&quality=96&sign=00b57d9e3c37e03c6da1640f4e6f8c9c&type=album"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Гию Томиока",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 19,
+      "age": "19",
       "date of birth": "8 февраля",
       "growth": "176 см",
       "weight": "69 кг",
@@ -76,11 +76,11 @@
       "img": "https://sun9-21.userapi.com/impf/FnvMBmJ7zQLHjCGEGOkV-FOoONqdjcsxf093xQ/bKMlTPVnU7A.jpg?size=350x500&quality=96&sign=3a1eac8f440b3171b5334e0c04211298&type=album"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Тенген Узуй",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 23,
+      "age": "23",
       "date of birth": "31 октября",
       "growth": "198 см",
       "weight": "95 кг",
@@ -90,11 +90,11 @@
       "img": "https://sun9-69.userapi.com/impf/Bmzx9fH9VRjDd-VrgZJDDG8Qh9fEnHLV6rcXpA/VEG1lYPk7fE.jpg?size=350x500&quality=96&sign=0983e5a00c9b95af5cac0732e737c38d&type=album"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Мицури Канроджи",
       "race": "Человек",
       "gender": "Женский",
-      "age": 19,
+      "age": "19",
       "date of birth": "1 июля",
       "growth": "167 см",
       "weight": "56 кг",
@@ -104,11 +104,11 @@
       "img": "https://sun9-78.userapi.com/impf/LeOykJH9736GxMU79ETZrcIcnHqAq2d5J_dTfQ/NhbOBc1rpLE.jpg?size=350x500&quality=96&sign=7c43dc9ded4ae30294d0e3e53d235283&type=album"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Обанай Игуро",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 21,
+      "age": "21",
       "date of birth": "15 сентября",
       "growth": "162 см",
       "weight": "53 кг",
@@ -118,11 +118,11 @@
       "img": "https://sun9-11.userapi.com/impf/_hLv1KyZMUP41zrrzLr62P9qkzkpel2rP_eoyw/2vY9aHqU3Do.jpg?size=350x500&quality=96&sign=e0e5ce60b517421f1fb57c858113c3d1&type=album"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Кёджуро Ренгоку",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 20,
+      "age": "20",
       "date of birth": "10 мая",
       "growth": "177 см",
       "weight": "72 кг",
@@ -132,11 +132,11 @@
       "img": "https://sun9-80.userapi.com/impf/yEcZ-32FPXIgLIGUPDU7hkRnSVjty12g9ogrqw/V7wmNVFVhOQ.jpg?size=1000x1429&quality=96&sign=80db99dd6b20e858aa40ff164353b119&type=album"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Гёмей Химеджима",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 27,
+      "age": "27",
       "date of birth": "23 августа",
       "growth": "220 см",
       "weight": "130 кг",
@@ -146,11 +146,11 @@
       "img": "https://sun9-39.userapi.com/impf/3NgX9HXeqr5iEc7k51Wq9MGbRDSVqimG03xlpw/MZ1765nJRj8.jpg?size=1000x1429&quality=96&sign=763eb42694775b14d7aa99599c4163cc&type=album"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Генья Шинадзугава",
       "race": "Демон",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "7 января",
       "growth": "180 см",
       "weight": "76 кг",
@@ -160,89 +160,93 @@
       "img": "https://sun9-10.userapi.com/impf/MI40RwsZj2qZuPiG9mhIxWhcnJFzFlF3JS9pNg/M0Xz7bRmE5I.jpg?size=1000x1008&quality=96&sign=41f901bdbc80b32f53eddc6196eb072a&type=album"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Kamado Tanjirō",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "14 июля",
       "growth": "165 см",
       "weight": "61 кг",
       "img": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Tanjiro_anime.png/revision/latest/scale-to-width-down/350?cb=20181128204204"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Kamado Tanjirō",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "14 июля",
       "growth": "165 см",
       "weight": "61 кг",
       "img": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Tanjiro_anime.png/revision/latest/scale-to-width-down/350?cb=20181128204204"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Kamado Tanjirō",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "14 июля",
       "growth": "165 см",
       "weight": "61 кг",
       "img": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Tanjiro_anime.png/revision/latest/scale-to-width-down/350?cb=20181128204204"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Kamado Tanjirō",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "14 июля",
       "growth": "165 см",
       "weight": "61 кг",
       "img": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Tanjiro_anime.png/revision/latest/scale-to-width-down/350?cb=20181128204204"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Kamado Tanjirō",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "14 июля",
       "growth": "165 см",
       "weight": "61 кг",
       "img": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Tanjiro_anime.png/revision/latest/scale-to-width-down/350?cb=20181128204204"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Kamado Tanjirō",
       "race": "Человек",
       "gender": "Мужской",
-      "age": 16,
+      "age": "16",
       "date of birth": "14 июля",
       "growth": "165 см",
       "weight": "61 кг",
       "img": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Tanjiro_anime.png/revision/latest/scale-to-width-down/350?cb=20181128204204"
     },
     {
+      "id": "b7268630-add4-11ec-acd7-c9f639f7f8e5",
       "name": "Артур",
-      "img": "https://sun9-76.userapi.com/impg/aq9bQBXYkQK521HqkrO3vx44ovU_CTruT24q3Q/uuBDqNcSDCc.jpg?size=1620x2160&quality=96&sign=88c0161ab67954e3ab9dc45b5e046f80&type=album",
-      "id": 100
-    },
-    {
-      "name": "Bhf",
-      "img": "https://sun9-76.userapi.com/impg/aq9bQBXYkQK521HqkrO3vx44ovU_CTruT24q3Q/uuBDqNcSDCc.jpg?size=1620x2160&quality=96&sign=88c0161ab67954e3ab9dc45b5e046f80&type=album",
-      "id": 110
+      "race": "Человек",
+      "gender": "Мужской",
+      "age": "27",
+      "date of birth": "29 июня",
+      "growth": "175 см",
+      "weight": "80 кг",
+      "utensils": "Разработчик",
+      "style": "JS",
+      "status": "Жив",
+      "img": "https://sun9-9.userapi.com/impf/6qbjPtXI1pPcMvusQmxuNEV1WiwO97W9glM14A/JCIkMgGeatI.jpg?size=1620x2160&quality=95&sign=62bb305ef7b828b30a9218c3d8345a65&type=album"
     }
   ],
   "demons": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Незуко Камадо",
       "race": "Демон",
       "gender": "Женский",
-      "age": 14,
+      "age": "14",
       "date of birth": "28 декабря",
       "growth": "153 см",
       "weight": "45 кг",
@@ -251,7 +255,7 @@
       "img": "https://sun9-36.userapi.com/impf/g0TmtPIjkhmn3ln0Cfa8EyvwkAfK5WQqRmr1uw/rwiRGniMoI8.jpg?size=350x500&quality=96&sign=3ec7650f767fe85fa5029377f74a224f&type=album"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Музан Кибуцуджи",
       "race": "Демон",
       "gender": "Мужской",
@@ -264,11 +268,11 @@
       "img": "https://sun9-43.userapi.com/impf/gQKy_-eQynWqGFsIkQU4b7hjyhF2dvS-4HJf3w/QTOWVsb6FkI.jpg?size=1000x1060&quality=96&sign=984d1a7f26a85264726389942dbc2f6b&type=album"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Кокушибо",
       "race": "Демон",
       "gender": "Мужской",
-      "age": 100,
+      "age": "100",
       "date of birth": "14 июля",
       "growth": "190 см",
       "weight": "90 кг",
@@ -277,11 +281,11 @@
       "img": "https://sun9-63.userapi.com/impf/fx2IUexw7jyOWtG54sdPEitsX0FAPrNXKdYqSg/rSSpf3t_ze0.jpg?size=1000x1487&quality=96&sign=4ba6ae026f9ce63a8f230a40bc3cb125&type=album"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Аказа",
       "race": "Демон",
       "gender": "Мужской",
-      "age": 200,
+      "age": "200",
       "date of birth": "Неизвестно",
       "growth": "173 см",
       "weight": "74 кг",
@@ -290,11 +294,11 @@
       "img": "https://sun9-86.userapi.com/impf/oJX19T-S0xfDp93j_UZkMVubDMq167IzRzc_Jw/3gS1M-_6318.jpg?size=862x926&quality=96&sign=b6fb9a137a92ec1579e391953e3f9b28&type=album"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Гютаро",
       "race": "Демон",
       "gender": "Мужской",
-      "age": 126,
+      "age": "126",
       "date of birth": "Неизвестно",
       "growth": "173 см",
       "weight": "74 кг",
@@ -303,11 +307,11 @@
       "img": "https://sun9-20.userapi.com/impf/JCssIj74M-9vKW9xMGWPpVlY_D7Gjyc8SuYzDQ/QJtpMAMgMYQ.jpg?size=350x495&quality=96&sign=ce09a4d692591af134ce6e81fb36949c&type=album"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Даки",
       "race": "Демон",
       "gender": "Женксий",
-      "age": 113,
+      "age": "113",
       "date of birth": "Неизвестно",
       "growth": "173 см",
       "weight": "74 кг",
@@ -316,7 +320,7 @@
       "img": "https://sun9-70.userapi.com/impf/mKShT7G9kzVFZvw8tOqAHrkfCxqVkj0ZqBn4aw/EdKHpL628M8.jpg?size=1000x1247&quality=96&sign=e13e659df44a60ee3a4a1b5b8dfed719&type=album"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Кайгаку",
       "race": "Демон",
       "gender": "Мужской",

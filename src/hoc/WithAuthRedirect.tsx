@@ -1,7 +1,7 @@
 import React, {ComponentType} from "react";
 import {connect} from "react-redux";
 import {rootReducerType} from "../store/Store-redux";
-import {Login} from "../components/login/Login";
+import {ConnectedLoginContainer} from "../components/login/Login_container";
 
 
 type mapStateToPropsType = {
@@ -21,7 +21,7 @@ export function withAuthRedirect<T>(Component: ComponentType<T>) {
 
 
         let {isAuth, ...restProps} = props
-        if (!isAuth) return <Login/>
+        if (!isAuth) return <ConnectedLoginContainer />
 
 
         return <Component {...restProps as T}/>

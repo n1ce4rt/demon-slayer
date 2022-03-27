@@ -11,9 +11,10 @@ export const App = () => {
     const status = useSelector((state: rootReducerType): string => state.appReducer.status)
 
     return (
-        <div className={style.app}>
+        <div className={style.app} style={{position: "relative"}}>
             {
-                status === 'loading' && <LinearProgress />
+                status === 'loading' &&
+                <LinearProgress sx={{position: "absolute", top: '70px', left: '0px', width: '100%'}}/>
             }
             <Header/>
             <Main/>
