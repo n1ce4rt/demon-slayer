@@ -9,7 +9,7 @@ import {Hero} from "./Hero";
 import {BasicPagination} from "../pagination/Pagination";
 import {Search} from "../search/Search";
 import {useNavigate} from "react-router-dom";
-import {heroType} from "../../types/Hero_reducer_types";
+import {heroType} from "../../types/Heroes_reducer_types";
 
 
 type statusType = 'Жив' | 'Мертв' | 'Все'
@@ -17,28 +17,16 @@ type statusType = 'Жив' | 'Мертв' | 'Все'
 type propsType = {
     heroes: Array<heroType>
     deleteHero: (heroId: string) => void
-    changeAge: (heroId: string, age: number | string) => void
     createHero: (name: any, id: any, img: any) => void
     deleteHeroGlobal: (heroId: string) => void
     changeHero: (heroId: string, age: string, birthday: string , growth: string, weight: string, status: string) => void
     searchHero: (name: string) => void
-    changeBirthday: (heroId: string, birthday: string) => void
-    changeGrowth: (heroId: string, growth: string) => void
-    changeWeight: (heroId: string, weight: string) => void
-    changeStatus: (heroId: string, status: string) => void
-
 }
 export const Heroes = ({
                            heroes,
                            deleteHero,
-                           changeAge,
-                           createHero,
                            deleteHeroGlobal,
                            changeHero,
-                           searchHero,
-                           changeBirthday,
-                           changeGrowth,
-                           changeWeight, changeStatus
                        }: propsType) => {
 
     const [filter, setFilter] = useState<statusType>('Все')
@@ -48,7 +36,6 @@ export const Heroes = ({
     let filterHeroes = heroes.filter((hero) => hero.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
 
     if (filter === 'Жив') {
-        debugger
         filterHeroes = heroes.filter(hero => hero.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()) && (hero.status === 'Жив' || hero.status === 'Жива'))
     }
     if (filter === 'Мертв') {
@@ -60,7 +47,7 @@ export const Heroes = ({
             <CssBaseline/>
             <Container maxWidth="sm"
                        sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: '10px 0'}}>
-                <BasicPagination/>
+                <BasicPagination who={'hero'}/>
                 <Search searchHero={setSearch}/>
                 <Button sx={{marginInline: '0px'}}
                         onClick={() => {
@@ -103,13 +90,7 @@ export const Heroes = ({
                                 status={hero.status}
                                 deleteHero={deleteHero}
                                 deleteHeroGlobal={deleteHeroGlobal}
-                                changeAge={changeAge}
                                 changeHero={changeHero}
-                                changeBirthday={changeBirthday}
-                                changeGrowth={changeGrowth}
-                                changeWeight={changeWeight}
-                                changeStatus={changeStatus}
-
                             />
                         })
                     }

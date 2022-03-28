@@ -1,7 +1,7 @@
 {
   "auth": {
     "login": "Arthur",
-    "password": "231231231231",
+    "password": "213213123123",
     "isAuth": true
   },
   "characters": [
@@ -10,10 +10,10 @@
       "name": "Танджиро Камадо",
       "race": "Человек",
       "gender": "Мужской",
-      "age": "13",
-      "date of birth": "14 июля",
-      "growth": "165 см",
-      "weight": "61 кг",
+      "age": "14",
+      "date of birth": "28 декабря",
+      "growth": "153 см",
+      "weight": "45 кг",
       "utensils": "Истребители Демонов",
       "style": "Дыхание воды, танец бога огня",
       "status": "Жив",
@@ -251,6 +251,7 @@
       "growth": "153 см",
       "weight": "45 кг",
       "utensils": "Сестра Танджиро Камадо",
+      "genus": "Танджиро Камадо",
       "status": "Жива",
       "img": "https://sun9-36.userapi.com/impf/g0TmtPIjkhmn3ln0Cfa8EyvwkAfK5WQqRmr1uw/rwiRGniMoI8.jpg?size=350x500&quality=96&sign=3ec7650f767fe85fa5029377f74a224f&type=album"
     },
@@ -263,7 +264,8 @@
       "date of birth": "28 декабря",
       "growth": "179 см",
       "weight": "75 кг",
-      "utensils": "Демоны двенадцати лун (Лидер)",
+      "utensils": "Демоны двенадцати лун",
+      "genus": "Лидер",
       "status": "Мёртв",
       "img": "https://sun9-43.userapi.com/impf/gQKy_-eQynWqGFsIkQU4b7hjyhF2dvS-4HJf3w/QTOWVsb6FkI.jpg?size=1000x1060&quality=96&sign=984d1a7f26a85264726389942dbc2f6b&type=album"
     },
@@ -276,7 +278,8 @@
       "date of birth": "14 июля",
       "growth": "190 см",
       "weight": "90 кг",
-      "utensils": "Демоны двенадцати лун, первая высшая луна",
+      "utensils": "Демоны двенадцати лун",
+      "genus": "Первая высшая луна",
       "status": "Мёртв",
       "img": "https://sun9-63.userapi.com/impf/fx2IUexw7jyOWtG54sdPEitsX0FAPrNXKdYqSg/rSSpf3t_ze0.jpg?size=1000x1487&quality=96&sign=4ba6ae026f9ce63a8f230a40bc3cb125&type=album"
     },
@@ -290,6 +293,7 @@
       "growth": "173 см",
       "weight": "74 кг",
       "utensils": "Демоны двенадцати лун",
+      "genus": "",
       "status": "Мёртв",
       "img": "https://sun9-86.userapi.com/impf/oJX19T-S0xfDp93j_UZkMVubDMq167IzRzc_Jw/3gS1M-_6318.jpg?size=862x926&quality=96&sign=b6fb9a137a92ec1579e391953e3f9b28&type=album"
     },
@@ -302,7 +306,8 @@
       "date of birth": "Неизвестно",
       "growth": "173 см",
       "weight": "74 кг",
-      "utensils": "Демоны двенадцати лун, шестая высшая луна",
+      "utensils": "Демоны двенадцати лун",
+      "genus": "Шестая высшая луна",
       "status": "Мёртв",
       "img": "https://sun9-20.userapi.com/impf/JCssIj74M-9vKW9xMGWPpVlY_D7Gjyc8SuYzDQ/QJtpMAMgMYQ.jpg?size=350x495&quality=96&sign=ce09a4d692591af134ce6e81fb36949c&type=album"
     },
@@ -315,8 +320,9 @@
       "date of birth": "Неизвестно",
       "growth": "173 см",
       "weight": "74 кг",
-      "utensils": "Демоны двенадцати лун, шестая высшая луна",
-      "status": "Мёртва",
+      "utensils": "Демоны двенадцати лун",
+      "genus": "Шестая высшая луна",
+      "status": "Мертва",
       "img": "https://sun9-70.userapi.com/impf/mKShT7G9kzVFZvw8tOqAHrkfCxqVkj0ZqBn4aw/EdKHpL628M8.jpg?size=1000x1247&quality=96&sign=e13e659df44a60ee3a4a1b5b8dfed719&type=album"
     },
     {
@@ -329,6 +335,7 @@
       "growth": "Неизвестно",
       "weight": "Неизвестно",
       "utensils": "Демоны двенадцати лун",
+      "genus": "",
       "status": "Мёртв",
       "img": "https://sun9-68.userapi.com/impf/eygPKqo6_-myNzbeD86vaIU2oBQDQ2QUGCIh-Q/74UrTG-08L0.jpg?size=350x350&quality=96&sign=722341ae2fd53285a936d7cb16b452fd&type=album"
     }

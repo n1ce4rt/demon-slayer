@@ -13,7 +13,7 @@ export const Main =() => {
             <Route path={'/'} element={<ConnectedHeroesContainer />} />
             <Route path={'login'} element={<ConnectedLoginContainer />} />
             <Route path={`heroes/:page`} element={<ConnectedHeroesContainer />} />
-            <Route path={'demons'} element={<ConnectedDemonsContainer />} />
+            <Route path={'demons/:page'} element={<ConnectedDemonsContainer />} />
             <Route path={'create'} element={<ConnectedCreateHero />} />
         </Routes>
 

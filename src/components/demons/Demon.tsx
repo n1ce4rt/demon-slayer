@@ -15,43 +15,44 @@ type propsType = {
     age: string
     growth: string
     weight: string
-    style: string
+    // style: string
     utensils: string
+    genus: string
     status: string
-    deleteHero: (heroId: string) => void
-    deleteHeroGlobal: (heroId: string) => void
-    changeHero: (heroId: string, age: string, birthday: string, growth: string, weight: string, status: string) => void
+    deleteDemon: (demonId: string) => void
+    deleteDemonGlobal: (demonId: string) => void
+    changeDemon: (demonId: string, age: string, birthday: string, growth: string, weight: string, status: string) => void
 
 }
 
-export const Hero = ({
-                         id,
-                         img,
-                         age,
-                         growth,
-                         status,
-                         name,
-                         utensils,
-                         weight,
-                         style,
-                         dob,
-                         deleteHero,
-                         deleteHeroGlobal,
-                         changeHero,
-                     }: propsType) => {
+export const Demon = ({
+                          id,
+                          img,
+                          age,
+                          growth,
+                          status,
+                          name,
+                          utensils,
+                          genus,
+                          weight,
+                          // style,
+                          dob,
+                          deleteDemon,
+                          changeDemon,
+                          deleteDemonGlobal,
+                      }: propsType) => {
 
     const [editMode, setEditMode] = useState<boolean>(false)
-    const [heroAge, setHeroAge] = useState<string>(age)
+    const [demonAge, setDemonAge] = useState<string>(age)
     const [birthday, setBirthday] = useState<string>(dob)
-    const [heroGrowth, setHeroGrowth] = useState<string>(growth)
-    const [heroWeight, setHeroWeight] = useState<string>(weight)
-    const [heroStatus, setHeroStatus] = useState<string>(status)
+    const [demonGrowth, setDemonGrowth] = useState<string>(growth)
+    const [demonWeight, setDemonWeight] = useState<string>(weight)
+    const [demonStatus, setDemonStatus] = useState<string>(status)
 
     const setValue = (e: any) => {
         if (e.key === 'Enter') {
             setEditMode(false)
-
-            changeHero(id, heroAge, birthday, heroGrowth, heroWeight, heroStatus)
+            changeDemon(id, demonAge, birthday, demonGrowth, demonWeight, demonStatus)
         }
     }
 
@@ -93,8 +94,8 @@ export const Hero = ({
                                 {`Возраст: ${age} лет`}
                             </Typography> :
                             <TextField type={'number'} onChange={(e) => {
-                                setHeroAge(e.currentTarget.value)
-                            }} label={'Возраст'} fullWidth size={'small'} variant={'standard'} value={heroAge}
+                                setDemonAge(e.currentTarget.value)
+                            }} label={'Возраст'} fullWidth size={'small'} variant={'standard'} value={demonAge}
                                        onKeyPress={(e) => setValue(e)}/>
                     }
                     {
@@ -105,8 +106,8 @@ export const Hero = ({
                                 {`Рост: ${growth}`}
                             </Typography> :
                             <TextField type={'text'} onChange={(e) => {
-                                setHeroGrowth(e.currentTarget.value)
-                            }} label={'Рост'} fullWidth size={'small'} variant={'standard'} value={heroGrowth}
+                                setDemonGrowth(e.currentTarget.value)
+                            }} label={'Рост'} fullWidth size={'small'} variant={'standard'} value={demonGrowth}
                                        onKeyPress={(e) => setValue(e)}/>
                     }
                     {
@@ -117,23 +118,23 @@ export const Hero = ({
                                 {`Вес: ${weight}`}
                             </Typography> :
                             <TextField type={'text'} onChange={(e) => {
-                                setHeroWeight(e.currentTarget.value)
-                            }} label={'Вес'} fullWidth size={'small'} variant={'standard'} value={heroWeight}
+                                setDemonWeight(e.currentTarget.value)
+                            }} label={'Вес'} fullWidth size={'small'} variant={'standard'} value={demonWeight}
                                        onKeyPress={(e) => setValue(e)}/>
                     }
-                    <Typography sx={{textAlign: 'right'}} gutterBottom variant={'h6'} component="div">
-                        {`Стили`}
-                    </Typography>
-                    <Typography sx={{textAlign: 'right'}} gutterBottom variant={'body1'}
-                                component="div">
-                        {style}
-                    </Typography>
                     <Typography sx={{textAlign: 'right'}} gutterBottom variant={'h6'} component="div">
                         {`Принадлежность`}
                     </Typography>
                     <Typography sx={{textAlign: 'right'}} gutterBottom variant={'body1'}
                                 component="div">
                         {utensils}
+                    </Typography>
+                    <Typography sx={{textAlign: 'right'}} gutterBottom variant={'h6'} component="div">
+                        {`Род`}
+                    </Typography>
+                    <Typography sx={{textAlign: 'right'}} gutterBottom variant={'body1'}
+                                component="div">
+                        {genus.length === 0 ? 'Неизвестно' : genus}
                     </Typography>
                     <Typography sx={{textAlign: 'right'}} gutterBottom variant={'h6'} component="div">
                         {`Статус`}
@@ -147,8 +148,8 @@ export const Hero = ({
                             </Typography> :
 
                             <TextField type={'text'} onChange={(e) => {
-                                setHeroStatus(e.currentTarget.value)
-                            }} label={'Статус'} fullWidth size={'small'} variant={'standard'} value={heroStatus}
+                                setDemonStatus(e.currentTarget.value)
+                            }} label={'Статус'} fullWidth size={'small'} variant={'standard'} value={demonStatus}
                                        onKeyPress={(e) => setValue(e)}/>
 
                     }
@@ -156,8 +157,8 @@ export const Hero = ({
 
             </Card>
             <Button onClick={() => {
-                deleteHero(id)
-                deleteHeroGlobal(id)
+                deleteDemon(id)
+                // deleteDemonGlobal(id)
             }}>Delete</Button>
         </>
     )

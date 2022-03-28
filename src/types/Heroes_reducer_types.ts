@@ -1,4 +1,4 @@
-export type actionType = getHeroesACType | deleteHeroACType | changeAgeACType | setCurrentPageACType | changeBirthdayACType | changeGrowthACType | changeWeightACType | changeStatusACType
+export type actionType = getHeroesACType | deleteHeroACType | changeAgeACType | setCurrentPageACType | changeBirthdayACType | changeGrowthACType | changeWeightACType | changeStatusACType | changeHeroACType
 
 
 export type heroType = {
@@ -57,5 +57,14 @@ export type changeWeightACType = {
 export type changeStatusACType = {
     type: 'CHANGE_STATUS'
     heroId: string
+    status: string
+}
+export type changeHeroACType = {
+    type: 'CHANGE_HERO'
+    heroId: string
+    age: string
+    birthday: string
+    growth: string
+    weight: string
     status: string
 }
