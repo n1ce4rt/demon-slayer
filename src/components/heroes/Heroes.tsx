@@ -48,10 +48,11 @@ export const Heroes = ({
     let filterHeroes = heroes.filter((hero) => hero.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
 
     if (filter === 'Жив') {
-        filterHeroes = heroes.filter(hero => (hero.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()) && hero.status === ('Жив' || 'Жива')))
+        debugger
+        filterHeroes = heroes.filter(hero => hero.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()) && (hero.status === 'Жив' || hero.status === 'Жива'))
     }
     if (filter === 'Мертв') {
-        filterHeroes = heroes.filter(hero => (hero.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()) && hero.status === ('Мертв' || 'Мертва')))
+        filterHeroes = heroes.filter(hero => hero.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()) && (hero.status === 'Мертв' || hero.status === 'Мертва'))
     }
     const navigate = useNavigate()
     return (

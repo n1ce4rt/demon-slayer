@@ -102,7 +102,7 @@ export const Hero = ({
                             <Typography onDoubleClick={() => setEditMode(true)} sx={{textAlign: 'right'}} gutterBottom
                                         variant={'body1'}
                                         component="div">
-                                {`Возраст: ${age}`}
+                                {`Возраст: ${age} лет`}
                             </Typography> :
                             <TextField type={'number'} onChange={(e) => {
                                 setHeroAge(e.currentTarget.value)

@@ -31,7 +31,7 @@ export  const heroesAPI = {
                 "name": `${name}`,
                 "race": `${race}`,
                 "gender": `${gender}`,
-                "age": `${age}`,
+                "age": `${age} лет`,
                 "date of birth": `${birthday}`,
                 "growth": `${growth} см`,
                 "weight": `${weight} кг`,
