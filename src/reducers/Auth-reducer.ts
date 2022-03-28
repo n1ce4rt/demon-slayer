@@ -32,15 +32,15 @@ export const auth_reducer = (state: initialAuthStateType = initialAuthState, act
 }
 export type authMeACType = {
     type: 'AUTH_ME'
-    login: string,
-    password: string,
-    isAuth: boolean,
-    error?: string
+    login: string | null
+    password: string | null
+    isAuth: boolean | null
+    error?: string | undefined
 }
 export type logOutACType = {
     type: 'LOG_OUT'
 }
-export const authMeAC = (login: string, password: string, isAuth: boolean, error?: string): authMeACType => ({type: 'AUTH_ME', login, password, isAuth, error} as const)
+export const authMeAC = (login: string | null, password: string | null, isAuth: boolean | null, error?: string | undefined): authMeACType => ({type: 'AUTH_ME', login, password, isAuth, error} as const)
 export const logOutAC = (): logOutACType  => ({type: 'LOG_OUT'} as const)
 
 export const authMeTC = (login: string, password: string, isAuth: boolean) => {

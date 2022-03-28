@@ -18,7 +18,9 @@ export const Header =() => {
     const user = useSelector((state: rootReducerType) : string => state.authReducer.login as string)
     const currentPage = useSelector((state: rootReducerType) : number => state.heroesReducer.currentPage)
     const auth = useSelector((state:rootReducerType) :boolean | null => state.authReducer.isAuth)
+    useEffect(() => {
 
+    },[currentPage])
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">

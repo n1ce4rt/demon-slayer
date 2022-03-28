@@ -13,8 +13,7 @@ export const App = () => {
     return (
         <div className={style.app} style={{position: "relative"}}>
             {
-                status === 'loading' &&
-                <LinearProgress sx={{position: "absolute", top: '70px', left: '0px', width: '100%'}}/>
+                status === 'loading' && <LinearProgress sx={{position: "absolute", top: '70px', left: '0px', width: '100%'}}/>
             }
             <Header/>
             <Main/>

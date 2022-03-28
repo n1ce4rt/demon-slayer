@@ -7,10 +7,11 @@ import {
     createNewHeroTC,
     deleteHeroAC,
     deleteHeroTC,
-    getHeroesTC,
-    heroType, searchHeroTK
+    getHeroesTC, searchHeroTK
 } from "../../reducers/Heroes-reducer";
 import {useEffect} from "react";
+import {useLocation} from "react-router-dom"
+import {heroType} from "../../types/Hero_reducer_types";
 
 
 export type heroesType = mapStateToPropsType & mapDispatchToPropsType
@@ -40,7 +41,7 @@ const mapStateToProps = (state: rootReducerType): mapStateToPropsType => {
 
 const HeroesContainer = ({
                              heroes,
-                             page,
+                             // page,
                              getHeroesTC,
                              deleteHeroAC,
                              changeAgeAC,
@@ -53,10 +54,11 @@ const HeroesContainer = ({
                              changeWeightAC,
                              changeStatusAC
                          }: heroesType) => {
+    let page = +useLocation().pathname.slice(-1)
     useEffect(() => {
+
         getHeroesTC(5, page)
-        console.log(page)
-    }, [])
+    }, [page])
 
     return (
         <Heroes heroes={heroes}
@@ -76,6 +78,8 @@ const HeroesContainer = ({
 }
 
 const WithRedirectHeroesContainer = withAuthRedirect(HeroesContainer)
+
+
 
 export const ConnectedHeroesContainer = connect(mapStateToProps, {
     getHeroesTC,

@@ -1,5 +1,7 @@
-import axios from "axios";
-import {heroType} from "../reducers/Heroes-reducer";
+import axios, {AxiosResponse} from "axios";
+import {heroType} from "../types/Hero_reducer_types";
+import {initialAuthStateType} from "../reducers/Auth-reducer";
+import {demonType} from "../reducers/Demons-reducer";
 
 
 
@@ -13,17 +15,17 @@ const instance = axios.create(
 export const demonsAPI = {
 
     getDemons() {
-        return instance.get(`demons`).then(response => response.data)
+        return instance.get(`demons`).then((response: AxiosResponse<demonType[]>) => response.data)
     },
 
 }
 
 export  const heroesAPI = {
     getHeroes(limit: number, page: number) {
-        return instance.get(`characters?_limit=${limit}&_page=${page}`).then(response  => response.data)
+        return instance.get(`characters?_limit=${limit}&_page=${page}`).then((response: AxiosResponse<heroType[]>)  => response.data)
     },
     searchHero (name: string) {
-        return instance.get(`characters?name=${name}`).then(response => response.data)
+        return instance.get(`characters?name=${name}`).then((response: AxiosResponse<heroType[]>) => response.data)
     },
     createHero (heroId: string, name: string, race: string, gender: string, age: number, birthday: string, growth: number, weight: number, utensils: string, style: string, status: string, img: string) {
         return instance.post('characters', {
@@ -52,7 +54,7 @@ export  const heroesAPI = {
 
 export const authAPI = {
     auth() {
-        return instance.get('auth').then(response => response.data)
+        return instance.get('auth').then((response:AxiosResponse<initialAuthStateType>) => response.data)
     },
     authMe(login: string, password: string, auth: boolean) {
         return instance.post('auth',{"login" : login, "password" : password, "isAuth" : auth})

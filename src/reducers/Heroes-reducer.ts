@@ -1,6 +1,14 @@
 import {heroesAPI} from "../api/Api";
 import {setStatusAC} from "./App-reducer";
 import {Dispatch} from "redux";
+import {
+    actionType,
+    changeAgeACType, changeBirthdayACType, changeGrowthACType, changeStatusACType, changeWeightACType,
+    deleteHeroACType,
+    getHeroesACType,
+    heroType,
+    initialStateType, setCurrentPageACType
+} from "../types/Hero_reducer_types";
 
 const GET_HEROES = 'GET_HEROES'
 const DELETE_HERO = 'DELETE_HERO'
@@ -11,27 +19,7 @@ const CHANGE_GROWTH = 'CHANGE_GROWTH'
 const CHANGE_WEIGHT = 'CHANGE_WEIGHT'
 const CHANGE_STATUS = 'CHANGE_STATUS'
 
-export type heroType = {
-    id: string
-    name: string
-    race: string
-    gender: string
-    age: string
-    "date of birth": string
-    growth: string
-    weight: string
-    style: string
-    utensils: string
-    status: string
-    img: string
 
-}
-
-export type initialStateType = {
-    heroes: Array<heroType>
-    currentPage: number
-    totalHeroes: number
-}
 const initialState: initialStateType = {
     heroes: [],
     currentPage: 1,
@@ -85,8 +73,8 @@ export const heroes_reducer = (state: initialStateType = initialState, action: a
             return state
     }
 }
-const setCurrentPageAC = (page:number) => ({type: SET_CURRENT_PAGE, page})
-const getHeroesAC = (heroes: Array<heroType>): getHeroesACType => ({type: GET_HEROES, heroes} as const)
+export const setCurrentPageAC = (page:number): setCurrentPageACType  => ({type: SET_CURRENT_PAGE, page})
+export const getHeroesAC = (heroes: Array<heroType>): getHeroesACType => ({type: GET_HEROES, heroes} as const)
 export const deleteHeroAC = (heroId: string): deleteHeroACType => ({type: DELETE_HERO, heroId} as const)
 export const changeAgeAC = (heroId: string, age: string): changeAgeACType => ({type: CHANGE_AGE, heroId, age} as const)
 export const changeBirthdayAC = (heroId: string, birthday: string): changeBirthdayACType => ({type: CHANGE_BIRTHDAY, heroId, birthday} as const)
@@ -128,41 +116,4 @@ export const deleteHeroTC = (heroId: string) => (dispatch: Dispatch) => {
     heroesAPI.deleteHero(heroId)
 }
 
-export type actionType = getHeroesACType | deleteHeroACType | changeAgeACType | setCurrentPageACType | changeBirthdayACType | changeGrowthACType | changeWeightACType | changeStatusACType
-export type setCurrentPageACType = {
-    type: 'SET_CURRENT_PAGE'
-    page: number
-}
-export type getHeroesACType = {
-    type: 'GET_HEROES'
-    heroes: Array<heroType>
-}
-export type deleteHeroACType = {
-    type: 'DELETE_HERO'
-    heroId: string
-}
-export type changeAgeACType = {
-    type: 'CHANGE_AGE'
-    heroId: string
-    age: string
-}
-export type changeBirthdayACType = {
-    type: 'CHANGE_BIRTHDAY'
-    heroId: string
-    birthday: string
-}
-export type  changeGrowthACType = {
-    type: 'CHANGE_GROWTH'
-    heroId: string
-    growth: string
-}
-export type changeWeightACType = {
-    type: 'CHANGE_WEIGHT'
-    heroId: string
-    weight: string
-}
-export type changeStatusACType = {
-    type: 'CHANGE_STATUS'
-    heroId: string
-    status: string
-}
+

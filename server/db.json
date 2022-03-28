@@ -1,7 +1,7 @@
 {
   "auth": {
     "login": "Arthur",
-    "password": "23321312312",
+    "password": "231231231231",
     "isAuth": true
   },
   "characters": [
@@ -238,20 +238,6 @@
       "style": "JS",
       "status": "Жив",
       "img": "https://sun9-9.userapi.com/impf/6qbjPtXI1pPcMvusQmxuNEV1WiwO97W9glM14A/JCIkMgGeatI.jpg?size=1620x2160&quality=95&sign=62bb305ef7b828b30a9218c3d8345a65&type=album"
-    },
-    {
-      "id": "af0aebc0-ade4-11ec-86dd-f37c0f1c4605",
-      "name": "Лена",
-      "race": "Человек",
-      "gender": "",
-      "age": "0",
-      "date of birth": "",
-      "growth": "0 см",
-      "weight": "0 кг",
-      "utensils": "",
-      "style": "",
-      "status": "Жива",
-      "img": "https://sun9-22.userapi.com/impf/G_THTSmmvU0PIA3aXnqYvE4uh4RSWqwdFLZQzQ/WKBxUefLypw.jpg?size=1447x2160&quality=96&sign=639e25082c1b44449519c4f0b0348286&type=album"
     }
   ],
   "demons": [

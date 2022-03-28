@@ -4,12 +4,12 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 import {useState} from "react";
-import {heroType} from "../../reducers/Heroes-reducer";
 import Button from "@mui/material/Button";
 import {Hero} from "./Hero";
 import {BasicPagination} from "../pagination/Pagination";
 import {Search} from "../search/Search";
 import {useNavigate} from "react-router-dom";
+import {heroType} from "../../types/Hero_reducer_types";
 
 
 type statusType = 'Жив' | 'Мертв' | 'Все'
@@ -88,7 +88,7 @@ export const Heroes = ({
                     </Box>
 
                     {
-                        filterHeroes.map((hero) => {
+                        filterHeroes.map((hero: heroType) => {
                             return <Hero
                                 key={hero.id}
                                 id={hero.id}
