@@ -58,7 +58,7 @@ export const getHeroesTC = (limit: number, page: number) => (dispatch: Dispatch)
         dispatch(setStatusAC('nice'))
     })
 }
-export const searchHeroTK = (name: string) => (dispatch: Dispatch) => {
+export const searchHeroTC = (name: string) => (dispatch: Dispatch) => {
     heroesAPI.searchHero(name).then((response) => {
         dispatch(getHeroesAC(response))
     })

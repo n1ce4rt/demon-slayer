@@ -157,7 +157,7 @@ export const Hero = ({
             </Card>
             <Button onClick={() => {
                 deleteHero(id)
-                deleteHeroGlobal(id)
+                // deleteHeroGlobal(id)
             }}>Delete</Button>
         </>
     )

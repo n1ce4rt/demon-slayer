@@ -7,7 +7,7 @@ import {
     createNewHeroTC,
     deleteHeroAC,
     deleteHeroTC,
-    getHeroesTC, searchHeroTK
+    getHeroesTC, searchHeroTC
 } from "../../reducers/Heroes-reducer";
 import {useEffect} from "react";
 import {useLocation} from "react-router-dom"
@@ -24,7 +24,7 @@ export type mapDispatchToPropsType = {
     createNewHeroTC: (name: any, id: any, img: any) => void
     deleteHeroTC: (heroId: string) => void
     changeHeroTC: (heroId: string, age: string, birthday: string, growth: string, weight: string, status: string) => void
-    searchHeroTK: (name: string) => void
+    searchHeroTC: (name: string) => void
 
 }
 const mapStateToProps = (state: rootReducerType): mapStateToPropsType => {
@@ -40,7 +40,7 @@ const HeroesContainer = ({
                              createNewHeroTC,
                              deleteHeroTC,
                              changeHeroTC,
-                             searchHeroTK,
+                             searchHeroTC,
 
                          }: heroesType) => {
     let page = +useLocation().pathname.slice(-1)
@@ -55,7 +55,7 @@ const HeroesContainer = ({
                 createHero={createNewHeroTC}
                 deleteHeroGlobal={deleteHeroTC}
                 changeHero={changeHeroTC}
-                searchHero={searchHeroTK}
+                searchHero={searchHeroTC}
         />
     )
 }
@@ -66,7 +66,7 @@ const WithRedirectHeroesContainer = withAuthRedirect(HeroesContainer)
 
 export const ConnectedHeroesContainer = connect(mapStateToProps, {
     getHeroesTC,
-    searchHeroTK,
+    searchHeroTC,
     deleteHeroAC,
     createNewHeroTC,
     deleteHeroTC,
