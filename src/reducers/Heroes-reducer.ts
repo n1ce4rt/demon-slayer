@@ -52,7 +52,6 @@ export const changeHeroAC = (heroId: string, age: string, birthday: string , gro
 export const getHeroesTC = (limit: number, page: number) => (dispatch: Dispatch) => {
     dispatch(setStatusAC('loading'))
     heroesAPI.getHeroes(limit, page).then((response) => {
-        debugger
         dispatch(getHeroesAC(response))
         dispatch(setCurrentPageAC(page))
         dispatch(setStatusAC('nice'))

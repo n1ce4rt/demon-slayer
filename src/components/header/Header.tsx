@@ -26,15 +26,6 @@ export const Header =() => {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         <Button disabled={!auth} onClick={() => {navigate(`/heroes/page=${currentHeroPage}`)}} sx={{ my: 2, color: 'white', display: 'inline' }}  variant={'outlined'}>Герои</Button>
                         <Button disabled={!auth} onClick={() => {navigate(`/demons/page=${currentDemonPage}`)}} sx={{ my: 2, color: 'white', display: 'inline' }}  variant={'outlined'}>Демоны</Button>
