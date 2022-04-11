@@ -5,7 +5,9 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import * as React from "react";
 import {useState} from "react";
-import {TextField} from "@mui/material";
+import {Fab, TextField} from "@mui/material";
+import EditIcon from '@mui/icons-material/Edit';
+import Box from "@mui/material/Box";
 
 type propsType = {
     id: string
@@ -155,10 +157,18 @@ export const Hero = ({
                 </CardContent>
 
             </Card>
-            <Button onClick={() => {
-                deleteHero(id)
-                // deleteHeroGlobal(id)
-            }}>Delete</Button>
+            <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
+                <Fab color={'success'} aria-label="edit" onClick={()=> {
+                    setEditMode(!editMode)
+                    changeHero(id, heroAge, birthday, heroGrowth, heroWeight, heroStatus)
+                }}>
+                    <EditIcon/>
+                </Fab>
+                <Button sx={{ my: 2}} color="error" variant={'contained'} onClick={() => {
+                    deleteHero(id)
+                    // deleteHeroGlobal(id)
+                }}>Delete</Button>
+            </Box>
         </>
     )
 }
